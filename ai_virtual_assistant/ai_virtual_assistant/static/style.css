@@ -1,0 +1,13 @@
+:root{--accent:linear-gradient(135deg,#f59e0b,#ef4444);--muted:#b28f6b}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial;background:#071026;color:#f1f7fb;margin:0;display:flex;align-items:center;justify-content:center;padding:24px}
+.container{width:100%;max-width:900px}
+.card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.04)}
+.input{width:100%;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.02);color:inherit}
+.actions{display:flex;gap:12px;align-items:center;margin-top:10px}
+.btn.primary{background:var(--accent);color:#fff;padding:10px;border-radius:10px;border:none}
+.spinner{width:28px;height:28px;border-radius:50%;border:4px solid rgba(255,255,255,0.06);border-top-color:#fff;animation:spin 1s linear infinite}
+.hidden{display:none}
+.result{margin-top:14px;background:rgba(0,0,0,0.25);padding:12px;border-radius:8px}
+#response{white-space:pre-wrap}
+@keyframes spin{to{transform:rotate(360deg)}}

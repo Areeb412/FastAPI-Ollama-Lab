@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Summar.ai — Text Summarizer</title>
+        <link rel="stylesheet" href="/static/style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <header class="header">
+                <h1>Summar.ai</h1>
+                <p class="tagline">Concise, readable summaries powered by local Ollama models.</p>
+                <div class="controls">
+                    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+                </div>
+            </header>
+
+            <section class="card">
+                <label for="inputText" class="label">Paste text to summarize</label>
+                <textarea id="inputText" placeholder="Paste or type long text here..."></textarea>
+
+                <div class="actions">
+                    <button id="summarizeBtn" class="btn primary">Summarize</button>
+                    <div id="loader" class="spinner hidden" aria-hidden="true"></div>
+                </div>
+
+                <div class="result" id="result">
+                    <h3>Summary</h3>
+                    <div id="summaryContent">Your summary will appear here.</div>
+                </div>
+            </section>
+
+            <footer class="footer">Local demo • No models downloaded automatically</footer>
+        </main>
+
+        <div id="toast" class="toast hidden"></div>
+
+        <script src="/static/script.js"></script>
+    </body>
+</html>
+
+
+

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>WriteLab — AI Content Writer</title>
+        <link rel="stylesheet" href="/static/style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <header class="header">
+                <h1>WriteLab</h1>
+                <p class="tagline">Generate blog posts, outlines, and more.</p>
+            </header>
+
+            <section class="card">
+                <input id="topic" class="input" placeholder="Enter a topic or headline" />
+                <select id="tone" class="select">
+                    <option value="professional">Professional</option>
+                    <option value="casual">Casual</option>
+                    <option value="technical">Technical</option>
+                </select>
+                <div class="actions">
+                    <button id="genBtn" class="btn primary">Generate</button>
+                    <div id="loader" class="spinner hidden"></div>
+                </div>
+
+                <div class="result">
+                    <h3>Output</h3>
+                    <div id="output" class="output">Your generated content will appear here.</div>
+                </div>
+            </section>
+
+            <footer class="footer">Local demo — pull models manually if prompted</footer>
+        </main>
+
+        <script src="/static/script.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+

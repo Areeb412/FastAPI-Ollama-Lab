@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Pulse — AI News Summarizer</title>
+        <link rel="stylesheet" href="/static/style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <header class="header"><h1>Pulse</h1><p class="tagline">Digest news into concise summaries.</p></header>
+            <section class="card">
+                <label class="label">Article URL</label>
+                <input id="url" class="input" placeholder="Paste article URL..." />
+                <div class="actions"><button id="runBtn" class="btn primary">Summarize</button><div id="loader" class="spinner hidden"></div></div>
+                <div class="result"><h3>Summary</h3><div id="summary">Summaries appear here.</div></div>
+            </section>
+            <footer class="footer">Local demo — models must be pulled manually</footer>
+        </main>
+        <script src="/static/script.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+

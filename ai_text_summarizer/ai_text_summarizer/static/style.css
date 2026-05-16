@@ -1,0 +1,30 @@
+:root{
+  --bg: #0f1724;
+  --card: rgba(255,255,255,0.06);
+  --glass: rgba(255,255,255,0.06);
+  --accent: linear-gradient(135deg,#7c3aed,#06b6d4);
+  --muted: #9ca3af;
+  --glass-border: rgba(255,255,255,0.08);
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#071021 0%, #0b1b2b 100%);color:#e6eef6;margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.container{width:100%;max-width:900px}
+.header{text-align:center;margin-bottom:18px}
+.header h1{margin:0;font-size:2rem;letter-spacing:0.4px}
+.tagline{color:var(--muted);margin:6px 0}
+.card{background:var(--card);backdrop-filter:blur(8px);border-radius:14px;padding:20px;border:1px solid var(--glass-border);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.label{display:block;margin-bottom:8px;color:var(--muted)}
+textarea#inputText{width:100%;min-height:180px;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));color:inherit;resize:vertical}
+.actions{display:flex;align-items:center;gap:12px;margin-top:12px}
+.btn{padding:10px 16px;border-radius:10px;border:none;cursor:pointer;background:transparent;color:inherit}
+.btn.primary{background:var(--accent);color:white;font-weight:600;box-shadow:0 6px 18px rgba(12,28,68,0.6)}
+.spinner{width:28px;height:28px;border-radius:50%;border:4px solid rgba(255,255,255,0.06);border-top-color:#fff;animation:spin 1s linear infinite}
+.hidden{display:none}
+.result{margin-top:18px;padding:12px;border-radius:10px;background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.03)}
+#summaryContent{color:#dfe7f3;line-height:1.5}
+.footer{text-align:center;margin-top:12px;color:var(--muted);font-size:0.9rem}
+.toast{position:fixed;right:20px;bottom:20px;background:#111827;color:#fff;padding:12px 16px;border-radius:10px;box-shadow:0 8px 24px rgba(2,6,23,0.6)}
+
+@keyframes spin{to{transform:rotate(360deg)}}
+
+@media (max-width:600px){.container{padding:0 12px}.header h1{font-size:1.5rem}}

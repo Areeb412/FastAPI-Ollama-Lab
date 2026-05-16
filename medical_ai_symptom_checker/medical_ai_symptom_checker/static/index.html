@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>PulseCare — Symptom Checker</title>
+        <link rel="stylesheet" href="/static/style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <header class="header"><h1>PulseCare</h1><p class="tagline">Understand possible causes and next steps.</p></header>
+            <section class="card">
+                <textarea id="symptoms" class="input" placeholder="Describe your symptoms..."></textarea>
+                <div class="actions"><button id="runBtn" class="btn primary">Analyze</button><div id="loader" class="spinner hidden"></div></div>
+                <div class="result"><h3>Insights</h3><div id="response">Insights will appear here.</div></div>
+            </section>
+            <footer class="footer">Informational only — consult a professional</footer>
+        </main>
+        <script src="/static/script.js"></script>
+    </body>
+</html>
+
+
+
+
+
+

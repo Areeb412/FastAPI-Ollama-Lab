@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>CodeForge — AI Code Assistant</title>
+        <link rel="stylesheet" href="/static/style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <header class="header">
+                <h1>CodeForge</h1>
+                <p class="tagline">Generate and debug code snippets with a local model.</p>
+            </header>
+
+            <section class="card">
+                <label class="label">Prompt or code</label>
+                <textarea id="input" placeholder="Describe what you want or paste code to debug..."></textarea>
+
+                <div class="row">
+                    <select id="mode" class="select">
+                        <option value="generate">Generate</option>
+                        <option value="debug">Debug</option>
+                    </select>
+                    <button id="runBtn" class="btn primary">Run</button>
+                    <div id="loader" class="spinner hidden"></div>
+                </div>
+
+                <div class="result"><pre id="output">Your result will appear here.</pre></div>
+            </section>
+
+            <footer class="footer">Local demo — models must be pulled manually</footer>
+        </main>
+
+        <script src="/static/script.js"></script>
+    </body>
+</html>
+
+
+
